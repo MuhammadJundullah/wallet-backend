@@ -43,7 +43,7 @@ const app = express();
 app.use(rateLimiter);
 app.use(express.json());
 
-app.get("/health", (req, res) => {
+app.get("/", (req, res) => {
   res.send("it's working");
 });
 
